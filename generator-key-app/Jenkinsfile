@@ -1,9 +1,0 @@
-node{
-    stage('SCM Checkout') {
-        git 'https://github.com/hugoguerra/apis.git'
-    },
-
-    stage('Compile Package') {
-        sh 'mvn package'
-    }
-}
