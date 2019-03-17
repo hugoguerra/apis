@@ -72,7 +72,7 @@ public class GeneratorService {
         Cookie cookie = new Cookie(COOKIE_NAME, encrypt());
         cookie.setMaxAge(43200 * 60);
         cookie.setPath("/");
-        cookie.setDomain(DOMAIN_NAME);
+//        cookie.setDomain(DOMAIN_NAME);
         response.addCookie(cookie);
     }
 
