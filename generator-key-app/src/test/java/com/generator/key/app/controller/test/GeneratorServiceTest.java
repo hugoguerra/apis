@@ -42,5 +42,10 @@ public class GeneratorServiceTest {
     public void test() {
         boolean generatorKey = service.generatorKey(request, response);
         Assert.assertTrue(generatorKey);
+
+
+//        Optional<Cookie> cookie = Arrays.asList(request.getCookies()).stream().filter(s -> s.getName().equals("cvpw")).findAny();
+//        Assert.assertTrue(cookie.isPresent());
+//        Assert.assertEquals(cookie.get().getName(), "cvpw");
     }
 }

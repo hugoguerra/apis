@@ -16,13 +16,13 @@ import javax.servlet.http.HttpServletResponse;
 
 @CrossOrigin
 @RestController
-@RequestMapping("/generator/key/")
+@RequestMapping("/generator/key")
 public class GeneratorKeyController {
 
     @Autowired
     private GeneratorService service;
 
-    @GetMapping(value = "/cookie", produces = MediaType.APPLICATION_JSON_VALUE)
+    @GetMapping(value = "", produces = MediaType.APPLICATION_JSON_VALUE)
     public ResponseEntity<Boolean> call(HttpServletRequest request, HttpServletResponse response) {
         try {
             return ResponseEntity.ok().body(service.generatorKey(request, response));
